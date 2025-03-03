@@ -1,0 +1,103 @@
+/* Style de la barre de navigation */
+.navbar {
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centrage vertical */
+    padding: 1rem 2rem; /* Espacement interne */
+    background: white; /* Fond blanc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour la profondeur */
+}
+
+.navbar > .img-fluid {
+    max-width: 100px; /* Largeur maximale de l'image */
+}
+
+/* Style des liens de la barre de navigation */
+.navbar-nav > .nav-link {
+    font-size: 14px; /* Taille de police */
+    font-weight: bold; /* Texte en gras */
+    color: #333; /* Couleur du texte */
+    text-transform: uppercase; /* Texte en majuscules */
+    padding: 0.5rem 1rem; /* Espacement interne des liens */
+    transition: color 0.3s ease; /* Transition fluide pour le survol */
+}
+
+/* Changement de couleur au survol des liens */
+.navbar-nav >.nav-link:hover {
+    color: #6e46de; /* Couleur violette au survol */
+}
+
+/* Style du MegaMenu */
+.megamenu {
+    position: relative; /* Position relative pour le dropdown */
+}
+
+/* Style du dropdown du MegaMenu */
+.megamenu > .dropdown-menu {
+    position: absolute; /* Position absolue pour le menu déroulant */
+    left: 0; /* Alignement à gauche */
+    width: 100%; /* Largeur maximale */
+    border: none; /* Pas de bordure */
+    background: white; /* Fond blanc */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour le dropdown */
+    padding: 1rem; /* Espacement interne */
+    display: none; /* Masqué par défaut */
+    z-index: 1000; /* Z-index élevé pour s'afficher au-dessus des autres éléments */
+}
+
+/* Affichage du dropdown au survol */
+.megamenu:hover > .dropdown-menu {
+    display: block; /* Afficher le dropdown au survol */
+}
+
+/* Style des catégories dans le MegaMenu */
+.list-unstyled {
+    padding: 0; /* Pas de padding par défaut */
+}
+
+.list-unstyled > .nav-item {
+    margin-bottom: 5px; /* Espacement entre les éléments */
+}
+
+.list-unstyled > .nav-item a {
+    color: #333; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 14px; /* Taille de police */
+    transition: color 0.3s ease; /* Transition fluide pour le survol */
+}
+
+.list-unstyled > .nav-item a:hover {
+    color: #6e46de; /* Couleur violette au survol */
+}
+
+/* Style de l'image de fond dans le MegaMenu */
+.megamenu > .col-lg-5 {
+    background: url('https://bootstrapious.com/i/snippets/sn-megamenu/mega.png') center center no-repeat; /* Image de fond */
+    background-size: cover; /* Ajustement de l'image */
+}
+
+/* Améliorations supplémentaires pour la barre de navigation */
+.navbar-toggler {
+    border: none; /* Pas de bordure pour le bouton toggler */
+    outline: none; /* Pas de contour au focus */
+}
+
+.navbar-toggler-icon {
+    background-color: #333; /* Couleur de l'icône du toggler */
+}
+
+/* Style pour les écrans mobiles */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center; /* Centrer les liens sur les petits écrans */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0; /* Espacement réduit pour les liens */
+    }
+
+    .megamenu .dropdown-menu {
+        position: static; /* Position statique pour les petits écrans */
+        box-shadow: none; /* Pas d'ombre sur les petits écrans */
+    }
+}

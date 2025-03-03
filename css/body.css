@@ -1,0 +1,13 @@
+/* Réinitialisation des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+  background: linear-gradient(to right, #f3757b, #6e46de); /* Dégradé de fond */
+  min-height: 100vh; /* Hauteur minimale de la page */
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
+}
