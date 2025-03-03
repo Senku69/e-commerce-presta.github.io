@@ -153,15 +153,16 @@
                         <a href="./about.php" class="btn btn-dark">Découvrir</a>
                     </div>
                     <div class="col-lg-6">
-                        <img src="/image/icon/Kiss_japan-removebg-preview.png" alt="Illustration" class="img-fluid">
+                        <img src="/image/icon/Kiss japan.png" alt="Illustration" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
         <!-- Section des produits -->
         <section class="py-5 bg-light">
-            <div class="container">
                 <h2 class="font-weight-bold text-uppercase text-center">Nos produits</h2>
+
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card border-0 shadow-sm">
@@ -356,6 +357,7 @@
                     </div>
                 </div>
             </div>
+            <!-- bouton voir plus et page annexe -->
             <div class="col-12 col-md-12 text-center">
                 <a href="#" class="btn btn-dark">Voir plus</a>
                 <nav aria-label="Page navigation example">
