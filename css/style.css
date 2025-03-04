@@ -5,11 +5,9 @@
 }
 
 body {
-    background: linear-gradient(to right, #f66e75, #6e46de);
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(113, 108, 241), rgb(162, 38, 38), rgb(0, 0, 0)); ;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 /* Style général du header */
 header {
@@ -168,12 +166,12 @@ a {
 }
 
 .btn-primary {
-    background-color: #d9534f;
+    background-color: #490404;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #c9302c;
+    background-color: #cf3b36;
 }
 
 /* Profil utilisateur */
@@ -227,5 +225,272 @@ a {
 
     .navbar-nav li {
         padding: 10px 0;
+    }
+}
+
+/* contenu de la page */
+
+.presentation {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.brand {
+    color: #d81b60;
+    font-weight: bold;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #d81b60;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b71550;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======= Styles de la Section Produits ======= */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+    text-decoration: underline white;
+    /* background-color: #f8f8f8; Fond léger */
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Grille des produits */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cartes de produit */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Images des produits */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Titres des produits */
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Description des produits */
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Prix */
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5722;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Bouton Acheter */
+.btn-buy {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #e6b800;
+}
+
+/* ======= Responsive Design ======= */
+@media screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 colonne */
+    }
+}
+
+
+
+/* ======= Styles du Footer ======= */
+.footer {
+    background-color: #222; /* Fond sombre */
+    color: white; /* Texte blanc */
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenu principal du footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Répartit les sections */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur petits écrans */
+    width: 90%;
+    margin: auto;
+}
+
+/* Section "À propos" */
+.footer-section.about {
+    width: 30%;
+}
+
+.footer-section.about .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-section.about p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Icônes de contact */
+.contact span {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Icônes des réseaux sociaux */
+.socials a {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #ffcc00; /* Changement de couleur au survol */
+}
+
+/* Section des liens rapides */
+.footer-section.links {
+    width: 20%;
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.footer-section.links a:hover {
+    color: #00c8ff;
+}
+
+/* Formulaire de contact */
+.footer-section.contact-form {
+    width: 40%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form .contact-btn {
+    background-color: #490404;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact-form .contact-btn:hover {
+    background-color: #cf3b36;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #490404; /* Légèrement plus foncé */
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* ======= Responsive Design ======= */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
