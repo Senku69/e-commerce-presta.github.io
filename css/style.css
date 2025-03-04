@@ -1,243 +1,231 @@
-/* Réinitialisation des marges et paddings pour éviter les incohérences entre navigateurs */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Assure que la largeur et la hauteur incluent le padding et la bordure */
+    box-sizing: border-box;
 }
 
-/* Style général du corps de la page */
 body {
-    background: linear-gradient(to right #f66e75, #6e46de); /* Dégradé de fond allant du rose au violet */
-    min-height: 100vh; /* Hauteur minimale pour occuper tout l'écran */
-    font-family: Arial, sans-serif; /* Utilisation d'une police sans-serif */
+    background: linear-gradient(to right, #f66e75, #6e46de);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-/* Barre de navigation */
-.navbar {
+
+/* Style général du header */
+header {
+    width: 100%;
+    background-color: #f8f8f8; /* Couleur de fond légère */
+    padding: 10px 0; /* Espacement haut et bas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet flottant */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: lightcyan; /* Fond  */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-/* Image du logo */
-.navbar > .img-fluid {
-    max-width: 100px; /* Ajustement de la largeur maximale */
+/* Logo */
+.logo img {
+    height: 60px; /* Taille du logo */
 }
 
-/* Style des liens de navigation */
-.navbar-nav > .nav-link {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase; /* Convertit le texte en majuscules */
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease; /* Animation fluide du changement de couleur */
+/* Barre de navigation principale */
+.navbar {
+    list-style: none; /* Suppression des puces */
+    display: flex; /* Disposition en ligne */
+    align-items: center; /* Alignement vertical */
+    gap: 20px; /* Espacement entre les éléments */
 }
 
-/* Effet au survol des liens de navigation */
-.navbar-nav > .nav-link:hover {
-    color: #6e46de; /* Couleur violette au survol */
+/* Menu principal */
+.navbar-nav {
+    list-style: none; /* Suppression des puces */
+    display: flex; /* Alignement horizontal */
+    gap: 15px; /* Espacement entre les liens */
+    padding: 0;
+    margin: 0;
 }
 
-/* MegaMenu */
-.megamenu {
+/* Liens du menu */
+.navbar-nav li {
+    list-style: none; /* Suppression des puces */
+    display: inline-block; /* Affichage en ligne */
+}
+
+a {
+    color: #000; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Curseur pointeur */
+    text-decoration: none; /* Suppression du soulignement */
+}
+
+
+.navbar-nav a {
+    text-decoration: none; /* Suppression du soulignement */
+    color: #333; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    padding: 8px 12px; /* Espacement interne */
+    transition: color 0.3s ease; /* Effet de transition */
+}
+
+.navbar-nav a:hover {
+    color: #d9534f; /* Changement de couleur au survol */
+}
+
+/* Dropdown (Megamenu) */
+.nav-item.dropdown {
     position: relative;
 }
 
-/* Style du menu déroulant du MegaMenu */
-.megamenu > .dropdown-menu {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border: none;
-    background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+/* Contenu du dropdown */
+.dropdown-menu {
     display: none; /* Caché par défaut */
-    z-index: 1000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 300px; /* Largeur minimale */
+    z-index: 10;
 }
 
-/* Affichage du menu au survol */
-.megamenu:hover > .dropdown-menu {
+/* Affichage du megamenu au survol */
+.nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/* Style des catégories du MegaMenu */
-.list-unstyled {
-    padding: 0;
+/* Conteneur du megamenu */
+.dropdown-menu .container {
+    max-width: 900px;
 }
 
-.list-unstyled > .nav-item {
+/* Colonnes des catégories */
+.dropdown-menu .col-lg-6 {
+    width: 250px;
+    padding: 10px;
+}
+
+/* Titres des catégories */
+.dropdown-menu h6 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #d9534f;
+}
+
+/* Liste des liens dans le megamenu */
+.dropdown-menu .list-unstyled {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu .nav-item {
+    list-style: none;
     margin-bottom: 5px;
 }
 
-.list-unstyled > .nav-item a {
-    color: #333;
+.dropdown-menu .nav-link {
     text-decoration: none;
-    font-size: 14px;
+    color: #555;
+    font-size: 13px;
     transition: color 0.3s ease;
 }
 
-/* Effet au survol des liens du MegaMenu */
-.list-unstyled > .nav-item a:hover {
-    color: #6e46de;
+.dropdown-menu .nav-link:hover {
+    color: #d9534f;
 }
 
-/* Image de fond du MegaMenu */
-.megamenu > .col-lg-5 {
-    background: url('https://bootstrapious.com/i/snippets/sn-megamenu/mega.png') center center no-repeat;
+/* Image de droite du megamenu */
+.dropdown-menu .col-lg-5 {
     background-size: cover;
+    background-position: center;
 }
 
-/* Bouton de navigation responsive */
-.navbar-toggler {
-    border: none;
+/* Boîte de recherche */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Champ de recherche */
+.search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     outline: none;
 }
 
-.navbar-toggler-icon {
-    background-color: #333;
-}
-
-/* Adaptation pour les écrans mobiles */
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 0.5rem 0;
-    }
-
-    .megamenu .dropdown-menu {
-        position: static;
-        box-shadow: none;
-    }
-}
-
-/* Style des sections */
-section.py-5 {
-    padding: 3rem 0;
-    background-color: #f8f9fa;
-}
-
-/* Conteneur centré */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Titre */
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-/* Texte */
-.text-muted {
-    font-size: 1.1rem;
-    color: #6c757d;
-    margin-bottom: 1.5rem;
-}
-
-/* Bouton sombre */
-.btn-dark {
-    background-color: #164573;
-    border-color: #343a40;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-}
-
-/* Effet au survol du bouton */
-.btn-dark:hover {
-    background-color: #212529;
-}
-
-/* Style des images */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-/* Style des cartes de produits */
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Effet au survol des cartes */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Image des cartes produits */
-.card img {
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-/* Titre des cartes */
-.card-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-/* Texte en gras */
-.font-weight-bold {
-    font-size: 1.2rem;
-    color: #5355ba;
-}
-
-/* Boutons des cartes */
-.btn-dark {
-    background-color: #6c7b89;
-    border-color: #343a40;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-}
-
-/* Effet au survol des boutons */
-.btn-dark:hover {
-    background-color: #3e464e;
-}
-
-/* Pagination */
-.pagination {
-    margin-top: 20px;
-}
-
-.pagination .page-item .page-link {
-    color: #6987a4;
+/* Bouton de recherche */
+.btn {
+    padding: 8px 15px;
     border: none;
-    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
-.pagination .page-item.disabled .page-link {
-    color: #abb1e7;
-}
-
-.pagination .page-item.active .page-link {
-    background-color: #6987a4;
+.btn-primary {
+    background-color: #d9534f;
     color: white;
 }
 
-/* Bouton "Voir plus" */
-.text-center .btn-dark {
-    margin-top: 20px;
+.btn-primary:hover {
+    background-color: #c9302c;
+}
+
+/* Profil utilisateur */
+.profil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Styles du bouton burger */
+.burger-menu {
+    display: none; /* Caché sur les grands écrans */
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Styles pour le menu en version mobile */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block; /* Affiche le burger sur mobile */
+    }
+
+    .navbar {
+        display: none; /* Cache la navigation */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .navbar.active {
+        display: flex; /* Affiche le menu quand il est actif */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        padding: 10px 0;
+    }
 }

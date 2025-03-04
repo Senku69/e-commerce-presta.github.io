@@ -1,0 +1,17 @@
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 991.98px) {
+    /* Réinitialisation des marges et paddings pour éviter les incohérences entre navigateurs */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Assure que la largeur et la hauteur incluent le padding et la bordure */
+}
+    /* Style général du corps de la page */
+    body {
+        background: linear-gradient(to right #f66e75, #6e46de); /* Dégradé de fond allant du rose au violet */
+        min-height: 100vh; /* Hauteur minimale pour occuper tout l'écran */
+        font-family: Arial, sans-serif; /* Utilisation d'une police sans-serif */
+    }
+    /* Barre de navigation */
+    /* Image du logo */
+}
