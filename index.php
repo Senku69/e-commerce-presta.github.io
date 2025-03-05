@@ -130,7 +130,7 @@
             </div>
         </section>
         <section class="products">
-            <h2>Nos TOP Produits </h2>
+            <h2>Nos TOP Produits Vanguard </h2>
             <div class="product-grid">
                 <!-- Produit 1 -->
                 <div class="product-card">
@@ -173,7 +173,7 @@
                     <img src="../kissJapan/image/produit/deck-box-dragon (1).png" alt="Produit 5">
                     <h3>Produit 5</h3>
                     <p>Description du produit 5.</p>
-                    <span class="price">12,99€</span>
+                    <span class="price">34,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
@@ -182,7 +182,7 @@
                     <img src="../kissJapan/image/produit/deck-box-knight (1).webp" alt="Produit 6">
                     <h3>Produit 6</h3>
                     <p>Description du produit 6.</p>
-                    <span class="price">22,99€</span>
+                    <span class="price">34,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
@@ -209,7 +209,7 @@
                     <img src="../kissJapan/image/produit/goodies figurine (1).jpg" alt="Produit 9">
                     <h3>Produit 9</h3>
                     <p>Description du produit 9.</p>
-                    <span class="price">18,99€</span>
+                    <span class="price">58,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
@@ -218,7 +218,7 @@
                     <img src="../kissJapan/image/produit/goodies figurine (1).webp" alt="Produit 10">
                     <h3>Produit 10</h3>
                     <p>Description du produit 10.</p>
-                    <span class="price">27,99€</span>
+                    <span class="price">47,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
@@ -227,7 +227,7 @@
                     <img src="../kissJapan/image/produit/goodies figurine (2).jpg" alt="Produit 11">
                     <h3>Produit 11</h3>
                     <p>Description du produit 11.</p>
-                    <span class="price">16,99€</span>
+                    <span class="price">79,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
@@ -236,7 +236,7 @@
                     <img src="../kissJapan/image/produit/goodies figurine (2).webp" alt="Produit 12">
                     <h3>Produit 12</h3>
                     <p>Description du produit 12.</p>
-                    <span class="price">19,99€</span>
+                    <span class="price">119,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
@@ -245,7 +245,7 @@
                     <img src="../kissJapan/image/produit/goodies figurine (3).webp" alt="Produit 12">
                     <h3>Produit 12</h3>
                     <p>Description du produit 12.</p>
-                    <span class="price">19,99€</span>
+                    <span class="price">139,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
