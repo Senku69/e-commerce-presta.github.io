@@ -134,7 +134,7 @@
             <div class="product-grid">
                 <!-- Produit 1 -->
                 <div class="product-card">
-                    <img src="image-produit1.jpg" alt="Produit 1">
+                    <img src="../kissJapan/image/produit/cardshop (1).webp" alt="Produit 1">
                     <h3>Produit 1</h3>
                     <p>Description du produit 1.</p>
                     <span class="price">19,99€</span>
@@ -143,7 +143,7 @@
 
                 <!-- Produit 2 -->
                 <div class="product-card">
-                    <img src="image-produit2.jpg" alt="Produit 2">
+                    <img src="../kissJapan/image/produit/cardshop (2).webp" alt="Produit 2">
                     <h3>Produit 2</h3>
                     <p>Description du produit 2.</p>
                     <span class="price">24,99€</span>
@@ -152,7 +152,7 @@
 
                 <!-- Produit 3 -->
                 <div class="product-card">
-                    <img src="image-produit3.jpg" alt="Produit 3">
+                    <img src="../kissJapan/image/produit/cardshop (3).webp" alt="Produit 3">
                     <h3>Produit 3</h3>
                     <p>Description du produit 3.</p>
                     <span class="price">14,99€</span>
@@ -161,7 +161,7 @@
 
                 <!-- Produit 4 -->
                 <div class="product-card">
-                    <img src="image-produit4.jpg" alt="Produit 4">
+                    <img src="../kissJapan/image/produit/cardshop (4).webp" alt="Produit 4">
                     <h3>Produit 4</h3>
                     <p>Description du produit 4.</p>
                     <span class="price">29,99€</span>
@@ -170,7 +170,7 @@
 
                 <!-- Produit 5 -->
                 <div class="product-card">
-                    <img src="image-produit5.jpg" alt="Produit 5">
+                    <img src="../kissJapan/image/produit/deck-box-dragon (1).png" alt="Produit 5">
                     <h3>Produit 5</h3>
                     <p>Description du produit 5.</p>
                     <span class="price">12,99€</span>
@@ -179,7 +179,7 @@
 
                 <!-- Produit 6 -->
                 <div class="product-card">
-                    <img src="image-produit6.jpg" alt="Produit 6">
+                    <img src="../kissJapan/image/produit/deck-box-knight (1).webp" alt="Produit 6">
                     <h3>Produit 6</h3>
                     <p>Description du produit 6.</p>
                     <span class="price">22,99€</span>
@@ -188,7 +188,7 @@
 
                 <!-- Produit 7 -->
                 <div class="product-card">
-                    <img src="image-produit7.jpg" alt="Produit 7">
+                    <img src="../kissJapan/image/produit/deck-box-shadow (2).webp" alt="Produit 7">
                     <h3>Produit 7</h3>
                     <p>Description du produit 7.</p>
                     <span class="price">34,99€</span>
@@ -197,16 +197,16 @@
 
                 <!-- Produit 8 -->
                 <div class="product-card">
-                    <img src="image-produit8.jpg" alt="Produit 8">
+                    <img src="../kissJapan/image/produit/deck-box-grandblue.png" alt="Produit 8">
                     <h3>Produit 8</h3>
                     <p>Description du produit 8.</p>
-                    <span class="price">9,99€</span>
+                    <span class="price">39,99€</span>
                     <button class="btn-buy">Acheter</button>
                 </div>
 
                 <!-- Produit 9 -->
                 <div class="product-card">
-                    <img src="image-produit9.jpg" alt="Produit 9">
+                    <img src="../kissJapan/image/produit/goodies figurine (1).jpg" alt="Produit 9">
                     <h3>Produit 9</h3>
                     <p>Description du produit 9.</p>
                     <span class="price">18,99€</span>
@@ -215,7 +215,7 @@
 
                 <!-- Produit 10 -->
                 <div class="product-card">
-                    <img src="image-produit10.jpg" alt="Produit 10">
+                    <img src="../kissJapan/image/produit/goodies figurine (1).webp" alt="Produit 10">
                     <h3>Produit 10</h3>
                     <p>Description du produit 10.</p>
                     <span class="price">27,99€</span>
@@ -224,7 +224,7 @@
 
                 <!-- Produit 11 -->
                 <div class="product-card">
-                    <img src="image-produit11.jpg" alt="Produit 11">
+                    <img src="../kissJapan/image/produit/goodies figurine (2).jpg" alt="Produit 11">
                     <h3>Produit 11</h3>
                     <p>Description du produit 11.</p>
                     <span class="price">16,99€</span>
@@ -233,7 +233,43 @@
 
                 <!-- Produit 12 -->
                 <div class="product-card">
-                    <img src="image-produit12.jpg" alt="Produit 12">
+                    <img src="../kissJapan/image/produit/goodies figurine (2).webp" alt="Produit 12">
+                    <h3>Produit 12</h3>
+                    <p>Description du produit 12.</p>
+                    <span class="price">19,99€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+
+                <!-- Produit 13 -->
+                <div class="product-card">
+                    <img src="../kissJapan/image/produit/goodies figurine (3).webp" alt="Produit 12">
+                    <h3>Produit 12</h3>
+                    <p>Description du produit 12.</p>
+                    <span class="price">19,99€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+
+                <!-- Produit 14 -->
+                <div class="product-card">
+                    <img src="../kissJapan/image/produit/deck-case.jpg" alt="Produit 12">
+                    <h3>Produit 12</h3>
+                    <p>Description du produit 12.</p>
+                    <span class="price">19,99€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+
+                <!-- Produit 15 -->
+                <div class="product-card">
+                    <img src="../kissJapan/image/produit/sleeves (1).jpg" alt="Produit 12">
+                    <h3>Produit 12</h3>
+                    <p>Description du produit 12.</p>
+                    <span class="price">19,99€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+
+                <!-- Produit 16 -->
+                <div class="product-card">
+                    <img src="../kissJapan/image/produit/sleeves (2).jpg" alt="Produit 12">
                     <h3>Produit 12</h3>
                     <p>Description du produit 12.</p>
                     <span class="price">19,99€</span>

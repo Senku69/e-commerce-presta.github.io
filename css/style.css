@@ -12,7 +12,8 @@ body {
 /* Style général du header */
 header {
     width: 100%;
-    background-color: #f8f8f8; /* Couleur de fond légère */
+    background-color: #775e5e; /* Couleur de fond légère */
+    color: white; /* Texte blanc */
     padding: 10px 0; /* Espacement haut et bas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet flottant */
     display: flex;
