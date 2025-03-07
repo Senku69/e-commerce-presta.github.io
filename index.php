@@ -8,6 +8,7 @@
 
     <!-- Liens vers les fichiers CSS et bibliothèques externes -->
     <link rel="stylesheet" href="../kissJapan/css/style.css">
+    <link rel="stylesheet" href="../kissJapan/css/mediaQuery.css">
 
 
     <!-- Titre de la page -->
@@ -20,7 +21,11 @@
         <a href="./index.php" class="logo"><img src="../kissJapan/image/icon/Kiss japan.png" alt="kissJapan"></a>
 
         <nav class="navbar">
-            <li><a href="./index.php">Prestations</a></li>
+            <!-- barre de recherche -->
+            <div class="search-box">
+                <input type="text" class="search" placeholder="Rechercher...">
+                <button type="submit" class="btn btn-primary">Rechercher</button>
+            </div>
             <ul class="navbar-nav mx-auto">
                 <!-- Megamenu-->
                 <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Boutiques</a>
@@ -30,6 +35,17 @@
                                 <div class="col-lg-7 col-xl-8">
                                     <div class="p-4">
                                         <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                                <h6 class="font-weight-bold text-uppercase"><a href="./prestations.php">Prestations</a></h6>
+                                                <ul class="list-unstyled">
+                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0">Yu-gi-oh Presta</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Cardfight Vanguard Presta</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Pokémon Presta</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Wixoss Presta</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Magic Presta</a></li>
+                                                </ul>
+                                            </div>
+
                                             <div class="col-lg-6 mb-4">
                                                 <h6 class="font-weight-bold text-uppercase">Catégories</h6>
                                                 <ul class="list-unstyled">
@@ -94,22 +110,28 @@
                     </div>
                 </li>
             </ul>
-            <li><a href="./index.php">Contact</a></li>
-            <!-- Bouton menu burger -->
-            <button class="burger-menu" id="burger-menu">
-                ☰
-            </button>
-            <script>
-                document.getElementById("burger-menu").addEventListener("click", function() {
-                    document.querySelector(".navbar").classList.toggle("active");
-                });
-            </script>
 
-            <!-- barre de recherche -->
-            <div class="search-box">
-                <input type="text" class="search" placeholder="Rechercher...">
-                <button type="submit" class="btn btn-primary">Rechercher</button>
+
+            <li><a href="./index.php">Connexion</a></li>/
+            <li><a href="./index.php">Inscription</a></li>
+            <!-- Bouton menu burger -->
+            <div class="search">
+                <button class="burger-menu" id="burger-menu">
+                    ☰
+                </button>
+                <script>
+                    document.getElementById("burger-menu").addEventListener("click", function() {
+                        document.querySelector(".navbar").classList.toggle("active");
+                    });
+                </script>
             </div>
+
+            <!-- bouton panier -->
+            <div class="panier">
+                <a href="./panier.php" class="btn btn-primary1"><img src="../kissJapan/image/icon/basket_96252.png" alt=""> </a>
+
+            </div>
+
             <a href="./profil.php"></a><img src="../kissJapan/avatar/default-avatar-profile.jpg" alt="myprofil" class="profil">
         </nav>
     </header>

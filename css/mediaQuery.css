@@ -1,17 +1,65 @@
-/* Adaptation pour les écrans mobiles */
-@media (max-width: 991.98px) {
-    /* Réinitialisation des marges et paddings pour éviter les incohérences entre navigateurs */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box; /* Assure que la largeur et la hauteur incluent le padding et la bordure */
+/* Affichage du menu sur mobile */
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: block; /* Affiche le menu burger */
+  }
+
+  .navbar {
+    display: none; /* Cache le menu */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #222; /* Même couleur que le header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 100;
+  }
+
+  .navbar.active {
+    display: flex; /* Affiche le menu quand il est actif */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav li {
+    padding: 10px 0;
+  }
 }
-    /* Style général du corps de la page */
-    body {
-        background: linear-gradient(to right #f66e75, #6e46de); /* Dégradé de fond allant du rose au violet */
-        min-height: 100vh; /* Hauteur minimale pour occuper tout l'écran */
-        font-family: Arial, sans-serif; /* Utilisation d'une police sans-serif */
-    }
-    /* Barre de navigation */
-    /* Image du logo */
+
+/* ======= Responsive Design section ======= */
+@media screen and (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 colonne */
+  }
+}
+
+/* ======= Responsive Design footer ======= */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
