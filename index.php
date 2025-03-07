@@ -9,6 +9,7 @@
     <!-- Liens vers les fichiers CSS et bibliothèques externes -->
     <link rel="stylesheet" href="../kissJapan/css/style.css">
     <link rel="stylesheet" href="../kissJapan/css/mediaQuery.css">
+    <script src="../kissJapan/js/index.js" defer></script>
 
 
     <!-- Titre de la page -->
@@ -26,105 +27,104 @@
                 <input type="text" class="search" placeholder="Rechercher...">
                 <button type="submit" class="btn btn-primary">Rechercher</button>
             </div>
-            <ul class="navbar-nav mx-auto">
-                <!-- Megamenu-->
-                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Boutiques</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu ">
-                        <div class="container">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm">
-                                <div class="col-lg-7 col-xl-8">
-                                    <div class="p-4">
-                                        <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase"><a href="./prestations.php">Prestations</a></h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0">Yu-gi-oh Presta</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Cardfight Vanguard Presta</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Pokémon Presta</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Wixoss Presta</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Magic Presta</a></li>
-                                                </ul>
-                                            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="#" id="closeBtn" class="closeBtn">x</a>
+                <ul class="navbar-nav mx-auto">
+                    <!-- Megamenu-->
+                    <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Boutiques</a>
+                        <div aria-labelledby="megamneu" class="dropdown-menu ">
+                            <div class="container">
+                                <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                    <div class="col-lg-7 col-xl-8">
+                                        <div class="p-4">
+                                            <div class="row">
+                                                <div class="col-lg-6 mb-4">
+                                                    <h6 class="font-weight-bold text-uppercase"><a href="./prestations.php">Prestations</a></h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0">Yu-gi-oh Presta</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Cardfight Vanguard Presta</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Pokémon Presta</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Wixoss Presta</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Magic Presta</a></li>
+                                                    </ul>
+                                                </div>
 
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">Catégories</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0">Yu-gi-oh</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Cardfight Vanguard</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Pokémon</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Wixoss</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Magic</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">Yu-gi-oh</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">Cardfight Vanguard</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">Pokémon</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">Wixoss</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 mb-4">
-                                                <h6 class="font-weight-bold text-uppercase">Magic</h6>
-                                                <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
-                                                </ul>
+                                                <div class="col-lg-6 mb-4">
+                                                    <h6 class="font-weight-bold text-uppercase">Catégories</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0">Yu-gi-oh</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Cardfight Vanguard</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Pokémon</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Wixoss</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Magic</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 mb-4">
+                                                    <h6 class="font-weight-bold text-uppercase">Yu-gi-oh</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 mb-4">
+                                                    <h6 class="font-weight-bold text-uppercase">Cardfight Vanguard</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 mb-4">
+                                                    <h6 class="font-weight-bold text-uppercase">Pokémon</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 mb-4">
+                                                    <h6 class="font-weight-bold text-uppercase">Wixoss</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 mb-4">
+                                                    <h6 class="font-weight-bold text-uppercase">Magic</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Carte à Jouer</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Booster</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Deck case</a></li>
+                                                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Portfolio</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://bootstrapious.com/i/snippets/sn-megamenu/mega.png)no-repeat; background-size: cover;"></div>
                                 </div>
-                                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://bootstrapious.com/i/snippets/sn-megamenu/mega.png)no-repeat; background-size: cover;"></div>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-
+                    </li>
+                </ul>
+            </div>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
 
             <li><a href="./index.php">Connexion</a></li>/
             <li><a href="./index.php">Inscription</a></li>
-            <!-- Bouton menu burger -->
-            <div class="search">
-                <button class="burger-menu" id="burger-menu">
-                    ☰
-                </button>
-                <script>
-                    document.getElementById("burger-menu").addEventListener("click", function() {
-                        document.querySelector(".navbar").classList.toggle("active");
-                    });
-                </script>
-            </div>
+
 
             <!-- bouton panier -->
             <div class="panier">

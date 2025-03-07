@@ -187,19 +187,61 @@ a {
 }
 
 /* Styles du bouton burger */
+
+
+
 /* Bouton menu burger */
-.burger-menu {
-  display: none; /* Caché sur les grands écrans */
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: white; /* Couleur blanche pour être visible sur fond sombre */
-  position: absolute;
-  top: 15px;
-  right: 20px;
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #b62e2e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav.active {
+  left: 0;
+}   
+
+.sidenav .close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.burger-icon span{
+  background: #fff;
+  display: block;
+  margin: 5px 0;
+  height: 3px;
+  width: 25px;
+}
 
 /* Conteneur du bouton panier */
 .panier {
