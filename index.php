@@ -351,9 +351,10 @@
                     </ul>
                 </div>
                 <div class="footer-section contact-form">
+                    <script src="../kissJapan/js/form.js"></script>
                     <h2>Contactez-nous</h2>
                     <br>
-                    <form action="index.html" method="post">
+                    <form id="form" action="index.html" method="post">
                         <input type="email" name="email" class="text-input contact-input" placeholder="Votre adresse email...">
                         <textarea rows="4" name="message" class="text-input contact-input" placeholder="Votre message..."></textarea>
                         <button type="submit" class="btn btn-big contact-btn">
@@ -361,6 +362,13 @@
                             Envoyer
                         </button>
                     </form>
+                    <?php
+                    if (isset($_POST['message']) and filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                        $retour = mail('destinataire@free.fr', 'Envoi depuis la page index-footer', $_POST['message'], 'From: vshiroe69@gmail.com' . "\r\n" . 'Reply-to: ' . $_POST['email']);
+                        if ($retour)
+                            echo '<p>Votre message a bien été envoyé.</p>';
+                    }
+                    ?>
                 </div>
             </div>
             <div class="footer-bottom">
